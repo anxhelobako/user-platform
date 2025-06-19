@@ -1,0 +1,170 @@
+.home-container {
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+}
+
+.posts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 80px;
+  margin-top: 20px;
+}
+
+.card {
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.card:hover {
+  background-color: #e0f7fa;
+  transform: scale(1.02);
+}
+
+.card h3 {
+  margin: 0;
+  font-size: 18px;
+  transition: color 0.3s ease;
+  color: #333;
+}
+
+.card:hover h3 {
+  color: #0077b6;
+}
+
+.card p {
+  font-size: 14px;
+  color: #555;
+  transition: opacity 0.3s ease;
+}
+
+.card:hover p {
+  opacity: 0.8;
+}
+
+.view-details-link {
+  display: inline-block;
+  margin-top: 10px;
+  color: #0077b6;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.view-details-link:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+/* Pagination Styling */
+.pagination {
+  margin-top: 70px;
+}
+
+.pagination-button {
+  padding: 8px 15px;
+  margin: 5px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.pagination-button:hover {
+  background-color: #0056b3;
+}
+
+.pagination-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+
+/* Add these styles to your existing Posts.css */
+
+.post-card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.post-card {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.post-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  background-color: #f8f9fa;
+}
+
+.post-card h3 {
+  color: #007bff;
+  margin-bottom: 10px;
+  transition: color 0.3s ease;
+}
+
+.post-card:hover h3 {
+  color: #0056b3;
+}
+
+.post-card p {
+  color: #555;
+  margin-bottom: 15px;
+  flex-grow: 1;
+}
+
+.post-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+/* Ensure edit form doesn't inherit link styles */
+.edit-form {
+  text-decoration: none;
+  pointer-events: auto;
+}
+
+/* Button adjustments for clickable cards */
+.edit-button, .delete-button {
+  position: relative;
+  z-index: 2;
+}
+.delete-button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+.post-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.delete-button {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.delete-button:hover:not(:disabled) {
+  background-color: #c82333;
+}

@@ -1,0 +1,141 @@
+/* Add Post Page Styling - src/pages/AddPost.css */
+.add-post-container {
+    max-width: 400px; /* Same width as the login page */
+    margin: 100px auto; /* Center it vertically and horizontally */
+    padding: 20px;
+    text-align: center;
+    background: white;
+    border-radius: 10px; /* Rounded corners for the box */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow effect */
+  }
+  
+  .add-post-container h2 {
+    color: #333;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Space between form elements */
+  }
+  
+  input, textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%; /* Make inputs take full width */
+  }
+  
+  textarea {
+    resize: vertical; /* Allow resizing vertically */
+    height: 150px; /* Fixed height for textarea */
+  }
+  
+  button {
+    background: #007bff;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background: #0056b3;
+  }
+  
+  button:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+  }
+  .add-post-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .add-post-container h2 {
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+  
+  .error-message {
+    color: #e74c3c;
+    background: #fde8e8;
+    padding: 0.8rem;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+  .form-group {
+    margin-bottom: 1.5rem;
+  }
+  
+  .post-title-input,
+  .post-content-input {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: border 0.3s;
+  }
+  
+  .post-title-input:focus,
+  .post-content-input:focus {
+    border-color: #3498db;
+    outline: none;
+  }
+  
+  .post-title-input {
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+  
+  .post-content-input {
+    resize: vertical;
+    min-height: 150px;
+  }
+  
+  .submit-button {
+    background: #3498db;
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+  
+  .submit-button:hover:not(:disabled) {
+    background: #2980b9;
+  }
+  
+  .submit-button:disabled {
+    background: #95a5a6;
+    cursor: not-allowed;
+  }
+  
+  .spinner {
+    width: 1rem;
+    height: 1rem;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    border-top-color: white;
+    animation: spin 1s ease-in-out infinite;
+  }
+  
+  @keyframes spin {
+    to { transform: rotate(360deg); }
+  }
