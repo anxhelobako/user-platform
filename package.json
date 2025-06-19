@@ -14,7 +14,7 @@
     "react-scripts": "^3.0.1",
     "web-vitals": "^2.1.4"
   },
-  "homepage": "https://anxhelobako.github,io/user-platform",
+  "homepage": "https://anxhelobako.github.io/user-platform",
   "scripts": {
     "start": "react-scripts start --openssl-legacy-provider",
     "build": "react-scripts build --openssl-legacy-provider",
